@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/pad_card"
+    android:layout_marginBottom="@dimen/pad_small">
+
+    <TextView
+        android:id="@+id/varName"
+        style="@style/LabBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/varPath"
+        style="@style/LabMono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GameState" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/pad_small">
+
+        <TextView
+            android:id="@+id/varType"
+            style="@style/LabDim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Type" />
+
+        <TextView
+            android:id="@+id/varAddress"
+            style="@style/LabDim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="monospace"
+            android:text="0x0000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/varValue"
+        style="@style/LabBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_alt"
+        android:padding="@dimen/pad_small"
+        android:layout_marginTop="@dimen/pad_small"
+        android:typeface="monospace"
+        android:text="value" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lab_bg"
+    android:padding="@dimen/pad_small">
+
+    <TextView
+        android:id="@+id/turnText"
+        style="@style/LabTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/pad_small"
+        android:paddingEnd="@dimen/pad_small"
+        android:text="Player 1" />
+
+    <TextView
+        android:id="@+id/statusText"
+        style="@style/LabDim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/pad_small"
+        android:paddingEnd="@dimen/pad_small"
+        android:paddingBottom="@dimen/pad_small"
+        android:text="Break shot." />
+
+    <com.university.poolseclab.game.PoolTableView
+        android:id="@+id/poolView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/pad_small">
+
+        <TextView
+            style="@style/LabBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/pad_small"
+            android:paddingEnd="@dimen/pad_small"
+            android:text="@string/label_power" />
+
+        <SeekBar
+            android:id="@+id/powerBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="55" />
+
+        <TextView
+            android:id="@+id/powerValue"
+            style="@style/LabMono"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingEnd="@dimen/pad_small"
+            android:text="55%" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/pad_small">
+
+        <Button
+            android:id="@+id/shootBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/pad_small"
+            android:text="@string/btn_shoot" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_new_game" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hintText"
+        style="@style/LabDim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad_small"
+        android:text="@string/game_hint" />
+
+</LinearLayout>

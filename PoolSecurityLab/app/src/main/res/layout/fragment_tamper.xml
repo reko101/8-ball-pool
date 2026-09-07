@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lab_bg"
+    android:padding="@dimen/pad_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/LabTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tamper_title" />
+
+        <TextView
+            style="@style/LabDim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:padding="@dimen/pad_card"
+            android:layout_marginTop="@dimen/pad_small"
+            android:text="@string/tamper_sub" />
+
+        <TextView
+            android:id="@+id/statusBanner"
+            style="@style/LabTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_alt"
+            android:padding="@dimen/pad_card"
+            android:layout_marginTop="@dimen/pad_card"
+            android:text="INTEGRITY: NOT CHECKED" />
+
+        <TextView
+            android:id="@+id/reportText"
+            style="@style/LabMono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/pad_card"
+            android:layout_marginTop="@dimen/pad_small"
+            android:textColor="@color/lab_text"
+            android:text="Press SEAL BASELINE, then apply a simulated modification, then press RUN INTEGRITY CHECK." />
+
+        <TextView
+            style="@style/LabSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pad_card"
+            android:paddingBottom="@dimen/pad_small"
+            android:text="Controls" />
+
+        <Button android:id="@+id/sealBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_seal" />
+        <Button android:id="@+id/verifyBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_verify" />
+        <Button android:id="@+id/restoreBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_restore" />
+
+        <TextView
+            style="@style/LabSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pad_card"
+            android:paddingBottom="@dimen/pad_small"
+            android:text="Simulated unauthorised modifications (inside this app only)" />
+
+        <Button android:id="@+id/tBalanceBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_t_balance" />
+        <Button android:id="@+id/tScoreBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_t_score" />
+        <Button android:id="@+id/tTeleportBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_t_teleport" />
+        <Button android:id="@+id/tSpeedBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_t_speed" />
+        <Button android:id="@+id/tReplayBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_t_replay" />
+
+        <TextView
+            style="@style/LabSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pad_card"
+            android:paddingBottom="@dimen/pad_small"
+            android:text="Control experiment" />
+
+        <Button android:id="@+id/tLegitBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_t_legit" />
+
+        <TextView
+            style="@style/LabSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pad_card"
+            android:paddingBottom="@dimen/pad_small"
+            android:text="@string/defenses_title" />
+
+        <TextView
+            android:id="@+id/defensesText"
+            style="@style/LabBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/pad_card"
+            android:layout_marginBottom="@dimen/pad_card"
+            android:text="-" />
+
+    </LinearLayout>
+</ScrollView>

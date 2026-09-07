@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        SECURITY / SCOPE NOTE
+        =====================
+        This laboratory application declares NO permissions at all.
+
+        In particular it does NOT declare:
+          android.permission.INTERNET            - the app is fully offline
+          android.permission.QUERY_ALL_PACKAGES  - it never inspects other apps
+          android.permission.SYSTEM_ALERT_WINDOW - it never draws over other apps
+          BIND_ACCESSIBILITY_SERVICE             - it never observes other apps
+          MANAGE_EXTERNAL_STORAGE / READ_LOGS    - not needed
+
+        Every value the app analyses belongs to its own process. It never reads,
+        writes, patches, hooks or overlays any other application.
+    -->
+
+    <application
+        android:name=".core.LabApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="false"
+        android:theme="@style/Theme.PoolSecurityLab">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PoolSecurityLab">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

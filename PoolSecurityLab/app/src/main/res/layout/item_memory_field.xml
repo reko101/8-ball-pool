@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/pad_card"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/fieldLine"
+        style="@style/LabMono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0x1048  score" />
+
+    <TextView
+        android:id="@+id/fieldMeta"
+        style="@style/LabDim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Int = 0" />
+
+</LinearLayout>

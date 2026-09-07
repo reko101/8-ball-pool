@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pool Security Lab</string>
+
+    <!-- Navigation -->
+    <string name="nav_game">Game</string>
+    <string name="nav_state">State</string>
+    <string name="nav_memory">Memory</string>
+    <string name="nav_tamper">Tamper</string>
+    <string name="nav_report">Report</string>
+
+    <!-- Game screen -->
+    <string name="btn_shoot">SHOOT</string>
+    <string name="btn_new_game">NEW GAME</string>
+    <string name="label_power">Power</string>
+    <string name="game_hint">Drag anywhere on the table to aim. Set the power, then press SHOOT.</string>
+
+    <!-- State inspector -->
+    <string name="state_title">Live game state inspector</string>
+    <string name="state_sub">Every value below is read from the GameState object of THIS application. No other process is inspected.</string>
+    <string name="btn_refresh">REFRESH VALUES</string>
+
+    <!-- Memory map -->
+    <string name="memory_title">Simulated memory map</string>
+    <string name="memory_sub">Tap any field to open its teaching card.</string>
+    <string name="memory_disclaimer">The addresses on this screen are invented for teaching only. They are a drawing of how a game state COULD be laid out. They are not real addresses, not offsets, and they do not correspond to any commercial product.</string>
+
+    <!-- Tamper lab -->
+    <string name="tamper_title">Tamper detection demonstration</string>
+    <string name="tamper_sub">These buttons write directly into the fields of this application, bypassing its own sanctioned setters. That models what an attacker with process memory access would do. Nothing outside this app is touched.</string>
+    <string name="btn_seal">SEAL BASELINE</string>
+    <string name="btn_verify">RUN INTEGRITY CHECK</string>
+    <string name="btn_restore">RESTORE TRUSTED STATE</string>
+    <string name="btn_t_balance">Simulate balance overwrite</string>
+    <string name="btn_t_score">Simulate score overwrite</string>
+    <string name="btn_t_teleport">Simulate cue ball teleport</string>
+    <string name="btn_t_speed">Simulate impossible velocity</string>
+    <string name="btn_t_replay">Simulate replay or rewind</string>
+    <string name="btn_t_legit">Sanctioned change: award 25 coins</string>
+    <string name="defenses_title">Integrity techniques in this build</string>
+
+    <!-- Report -->
+    <string name="report_title">Security report</string>
+
+    <!-- Shared -->
+    <string name="dlg_close">CLOSE</string>
+    <string name="lbl_name">Variable</string>
+    <string name="lbl_type">Data type</string>
+    <string name="lbl_value">Example value</string>
+    <string name="lbl_address">Simulated address</string>
+    <string name="lbl_desc">Description</string>
+    <string name="lbl_risk">Why exposing this is a risk</string>
+    <string name="lbl_defense">Recommended protection</string>
+</resources>

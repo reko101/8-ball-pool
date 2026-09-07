@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pad_screen">14dp</dimen>
+    <dimen name="pad_card">12dp</dimen>
+    <dimen name="pad_small">6dp</dimen>
+    <dimen name="card_radius">10dp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_section">15sp</dimen>
+    <dimen name="text_body">13sp</dimen>
+    <dimen name="text_mono">12sp</dimen>
+    <dimen name="text_small">11sp</dimen>
+</resources>
